@@ -1,0 +1,511 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nicoly Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bg-animation" id="bg-animation">
+        <div class="grid-overlay"></div>
+        <div class="fast-bg-animation" id="fast-bg-animation"></div>
+    </div>
+
+    <div class="scroll-down-arrow" id="scroll-down-arrow">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7 10l5 5 5-5"></path>
+        </svg>
+    </div>
+
+    <header class="fixed w-full top-0 z-50 futuristic-header py-4 px-6">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center">
+                <div class="w-12 h-12 rounded-full border-4 border-blue-500 overflow-hidden flex items-center justify-center">
+                    <img src="avatar.jpg" alt="Logo" class="w-full h-full object-cover">
+                </div>
+                <span class="ml-3 text-xl font-bold gradient-text orbitron">Nicoly</span>
+            </div>
+            
+            <nav>
+                <ul class="flex space-x-8">
+                    <li><a href="#about" class="nav-link text-white hover:text-blue-400">Sobre</a></li>
+                    <li><a href="#skills" class="nav-link text-white hover:text-blue-400">Habilidades</a></li>
+                    <li><a href="#projects" class="nav-link text-white hover:text-blue-400">Projetos</a></li>
+                    <li><a href="#contact" class="nav-link text-white hover:text-blue-400">Contatos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 pt-24 pb-12">
+        <section id="about" class="min-h-screen flex flex-col items-center justify-center text-center">
+            <div class="reveal">
+                <h1 class="text-6xl font-bold orbitron mb-8">
+                    <span class="bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 bg-clip-text text-transparent">Nicoly</span>
+                </h1>
+            </div>
+            <p class="text-xl mb-8 max-w-2xl reveal delay-200">
+                Olá, meu nome é Nicoly. Tenho grande interesse por programação e tecnologia. Nesta página, compartilho alguns dos meus projetos. Sinta-se à vontade para explorá-los.
+            </p>
+            <div class="reveal delay-300">
+                <a href="#projects" class="glow-button bg-gradient-to-r from-blue-500 to-blue-600 text-white px-8 py-3 rounded-full font-medium orbitron hover:shadow-lg hover:shadow-blue-500/30 transition-all">
+                    Ver Projetos
+                </a>
+            </div>
+        </section>
+
+        <section id="skills" class="py-20">
+            <h2 class="text-4xl font-bold mb-16 section-title text-center orbitron reveal">Habilidades</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="card p-8 text-center reveal delay-100 hologram">
+                    <div class="skill-icon-container mb-6">
+                        <svg class="skill-icon" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="url(#html-gradient)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <defs>
+                                <linearGradient id="html-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                    <stop offset="0%" stop-color="#00c6ff" />
+                                    <stop offset="100%" stop-color="#0072ff" />
+                                </linearGradient>
+                            </defs>
+                            <path d="M4 2l1.5 17L12 22l6.5-3L20 2H4z" stroke-width="1.5" fill="none"></path>
+                            <path d="M15.5 8H8.5l.5 4h6l-.5 5L12 18l-2.5-1" stroke-width="1.5" fill="none"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 orbitron">HTML</h3>
+                    <p class="text-gray-400">Linguagem de marcação para estruturar o conteúdo de páginas web.</p>
+                </div>
+                
+                <div class="card p-8 text-center reveal delay-200 hologram">
+                    <div class="skill-icon-container mb-6">
+                        <svg class="skill-icon" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="url(#css-gradient)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <defs>
+                                <linearGradient id="css-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                    <stop offset="0%" stop-color="#00c6ff" />
+                                    <stop offset="100%" stop-color="#0072ff" />
+                                </linearGradient>
+                            </defs>
+                            <path d="M4 2l1.5 17L12 22l6.5-3L20 2H4z" stroke-width="1.5" fill="none"></path>
+                            <path d="M8 7h8l-.5 5H9l.5 5 2.5 1 2.5-1 .2-2" stroke-width="1.5" fill="none"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 orbitron">CSS</h3>
+                    <p class="text-gray-400">Linguagem de estilização que controla a aparência visual dos elementos HTML.</p>
+                </div>
+                
+                <div class="card p-8 text-center reveal delay-300 hologram">
+                    <div class="skill-icon-container mb-6">
+                        <svg class="skill-icon" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="url(#js-gradient)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <defs>
+                                <linearGradient id="js-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                    <stop offset="0%" stop-color="#00c6ff" />
+                                    <stop offset="100%" stop-color="#0072ff" />
+                                </linearGradient>
+                            </defs>
+                            <rect x="2" y="2" width="20" height="20" rx="2" stroke-width="1.5" fill="none"></rect>
+                            <path d="M7 12v4c0 1 .5 2 2 2s2-1 2-2" stroke-width="1.5" fill="none"></path>
+                            <path d="M16 12v4c0 1-.5 2-2 2s-2-1-2-2" stroke-width="1.5" fill="none"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 orbitron">JavaScript</h3>
+                    <p class="text-gray-400">Linguagem de programação que adiciona interatividade às páginas web.</p>
+                </div>
+                
+                <div class="card p-8 text-center reveal delay-400 hologram">
+                    <div class="skill-icon-container mb-6">
+                        <svg class="skill-icon" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="url(#scratch-gradient)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <defs>
+                                <linearGradient id="scratch-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                    <stop offset="0%" stop-color="#00c6ff" />
+                                    <stop offset="100%" stop-color="#0072ff" />
+                                </linearGradient>
+                            </defs>
+                            <circle cx="12" cy="12" r="10" stroke-width="1.5" fill="none"></circle>
+                            <path d="M8 14s1.5 2 4 2 4-2 4-2" stroke-width="1.5" fill="none"></path>
+                            <circle cx="9" cy="9" r="1" stroke-width="1.5" fill="none"></circle>
+                            <circle cx="15" cy="9" r="1" stroke-width="1.5" fill="none"></circle>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 orbitron">Scratch</h3>
+                    <p class="text-gray-400">Linguagem de programação visual para criar jogos e animações.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="py-20">
+            <h2 class="text-4xl font-bold mb-16 section-title text-center orbitron reveal">Projetos</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <div class="card overflow-hidden reveal delay-100 hologram project-card">
+                    <div class="project-image">
+                        <div class="card-bg-animation"></div>
+                        <div class="monaliza-container" id="monaliza-container">
+                            <canvas id="monaliza-canvas" width="400" height="400"></canvas>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 gradient-text orbitron">Monaliza</h3>
+                        <p class="text-gray-300 mb-4">Projeto feito em p5.js onde os olhos da Monaliza seguem o cursor do mouse quando o usuário arrasta o mouse pela tela.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-blue-400">p5.js</span>
+                            <a href="https://example.com/monaliza" target="_blank" class="view-project-btn">
+                                Ver projeto
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M5 12h14"></path>
+                                    <path d="M12 5l7 7-7 7"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card overflow-hidden reveal delay-300 hologram project-card">
+                    <div class="project-image">
+                        <div class="card-bg-animation"></div>
+                        <div class="project-scene" style="background-color: #4E8D05; width: 100%; height: 100%; display: flex; justify-content: center; align-items: center;">
+                            <div class="finish-line"></div>
+                            
+                            <div style="position: relative; width: 80%; height: 80%;">
+                                <div class="emoji emoji-1" style="position: absolute; top: 15%; left: 15%; font-size: 30px;">😎</div>
+                                <div class="emoji emoji-2" style="position: absolute; top: 35%; left: 15%; font-size: 30px;">❤️</div>
+                                <div class="emoji emoji-3" style="position: absolute; top: 55%; left: 15%; font-size: 30px;">🎉</div>
+                                <div class="emoji emoji-4" style="position: absolute; top: 75%; left: 15%; font-size: 30px;">🌹</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 gradient-text orbitron">Corrida de Emojis Parte 2</h3>
+                        <p class="text-gray-300 mb-4">Versão aprimorada com 4 emojis que se movem com as teclas A, S, D e F até a linha de chegada.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-blue-400">p5.js</span>
+                            <a href="https://example.com/corrida-emojis-2" target="_blank" class="view-project-btn">
+                                Ver projeto
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M5 12h14"></path>
+                                    <path d="M12 5l7 7-7 7"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card overflow-hidden reveal delay-200 hologram project-card">
+                    <div class="project-image">
+                      <div class="card-bg-animation"></div>
+                      <div class="project-scene" style="background-color: #dcdcdc; width: 100%; height: 100%; position: relative;">
+                        <div style="
+                          position: absolute;
+                          top: 40%;
+                          left: 40%;
+                          width: 80px;
+                          height: 80px;
+                          border-radius: 50%;
+                          background-color: white;
+                          border: 2px solid black;
+                        "></div>
+                      </div>
+                    </div>
+                    <div class="p-6">
+                      <h3 class="text-xl font-bold mb-2 gradient-text orbitron">Quente e Frio</h3>
+                      <p class="text-gray-300 mb-4">Jogo interativo feito em p5.js onde você move o cursor até encontrar o ponto escondido. Quanto mais perto, mais "quente"!</p>
+                      <div class="flex justify-between items-center">
+                        <span class="text-sm text-blue-400">p5.js</span>
+                        <a href="https://example.com/quente-frio" target="_blank" class="view-project-btn">
+                          Ver projeto
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M5 12h14"></path>
+                            <path d="M12 5l7 7-7 7"></path>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  
+        </section>
+
+        <section id="contact" class="py-20">
+            <h2 class="text-4xl font-bold mb-16 section-title text-center orbitron reveal">Contatos</h2>
+            
+            <div class="max-w-3xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <a href="https://github.com/nicoly" target="_blank" class="card p-6 flex items-center reveal delay-100 hologram">
+                        <div class="w-12 h-12 rounded-full bg-gradient-to-r from-blue-500 to-blue-700 flex items-center justify-center mr-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-1 orbitron">GitHub</h3>
+                            <p class="text-gray-400">github.com/nicoly</p>
+                        </div>
+                    </a>
+                    
+                    <a href="mailto:nicoly@email.com" class="card p-6 flex items-center reveal delay-200 hologram">
+                        <div class="w-12 h-12 rounded-full bg-gradient-to-r from-blue-500 to-blue-700 flex items-center justify-center mr-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-1 orbitron">Email</h3>
+                            <p class="text-gray-400">nicoly@email.com</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-[#040b1f] bg-opacity-80 py-8 border-t border-blue-500 border-opacity-20">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-gray-400">&copy; 2025 Nicoly. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        function revealOnScroll() {
+            const reveals = document.querySelectorAll('.reveal');
+            
+            for (let i = 0; i < reveals.length; i++) {
+                const windowHeight = window.innerHeight;
+                const elementTop = reveals[i].getBoundingClientRect().top;
+                const elementVisible = 150;
+                
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add('active');
+                }
+            }
+        }
+        
+        window.addEventListener('scroll', revealOnScroll);
+        
+        window.addEventListener('DOMContentLoaded', () => {
+            revealOnScroll();
+            initMonalizaCanvas();
+            initFastBackgroundAnimation();
+            initScrollDownArrow();
+        });
+        
+        function initMonalizaCanvas() {
+            const canvas = document.getElementById('monaliza-canvas');
+            if (!canvas) return;
+            
+            const ctx = canvas.getContext('2d');
+            let olhoX = 150;
+            let olhoY = 150;
+            
+            function resizeCanvas() {
+                const container = document.getElementById('monaliza-container');
+                if (!container) return;
+                
+                const rect = container.getBoundingClientRect();
+                canvas.width = rect.width;
+                canvas.height = rect.height;
+                
+                drawMonaliza();
+            }
+            
+            window.addEventListener('resize', resizeCanvas);
+            resizeCanvas();
+            
+            function drawMonaliza() {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                
+                const scale = Math.min(canvas.width, canvas.height) / 400;
+                ctx.save();
+                ctx.scale(scale, scale);
+                
+                ctx.fillStyle = '#0ED5EE';
+                ctx.fillRect(0, 0, 400, 400);
+                
+                ctx.fillStyle = 'pink';
+                ctx.beginPath();
+                ctx.arc(200, 200, 150, 0, Math.PI * 2);
+                ctx.fill();
+                
+                ctx.fillStyle = 'white';
+                ctx.beginPath();
+                ctx.arc(150, 150, 30, 0, Math.PI * 2);
+                ctx.fill();
+                
+                ctx.beginPath();
+                ctx.arc(250, 150, 30, 0, Math.PI * 2);
+                ctx.fill();
+                
+                ctx.strokeStyle = 'red';
+                ctx.lineWidth = 3;
+                ctx.beginPath();
+                ctx.moveTo(150, 270);
+                ctx.lineTo(250, 235);
+                ctx.stroke();
+                
+                ctx.fillStyle = 'red';
+                ctx.beginPath();
+                ctx.moveTo(200, 180);
+                ctx.lineTo(170, 220);
+                ctx.lineTo(220, 220);
+                ctx.closePath();
+                ctx.fill();
+                
+                ctx.strokeStyle = 'black';
+                ctx.lineWidth = 2;
+                ctx.beginPath();
+                ctx.moveTo(123, 115);
+                ctx.lineTo(178, 113);
+                ctx.stroke();
+                
+                ctx.beginPath();
+                ctx.moveTo(225, 116);
+                ctx.lineTo(279, 106);
+                ctx.stroke();
+                
+                ctx.fillStyle = 'black';
+                ctx.beginPath();
+                ctx.arc(olhoX, olhoY, 5, 0, Math.PI * 2);
+                ctx.fill();
+                
+                ctx.beginPath();
+                ctx.arc(olhoX + 100, olhoY, 5, 0, Math.PI * 2);
+                ctx.fill();
+                
+                ctx.restore();
+            }
+            
+            function updateEyes(e) {
+                const rect = canvas.getBoundingClientRect();
+                const scaleX = 400 / rect.width;
+                const scaleY = 400 / rect.height;
+                
+                const mouseX = (e.clientX - rect.left) * scaleX;
+                const mouseY = (e.clientY - rect.top) * scaleY;
+                
+                olhoX = Math.max(130, Math.min(170, 150 + (mouseX - 200) / 10));
+                olhoY = Math.max(130, Math.min(170, 150 + (mouseY - 200) / 10));
+                
+                drawMonaliza();
+            }
+            
+            canvas.addEventListener('mousemove', updateEyes);
+            
+            drawMonaliza();
+            
+            let animationFrame;
+            function animateEyes() {
+                const time = Date.now() / 1000;
+                olhoX = 150 + Math.sin(time) * 5;
+                olhoY = 150 + Math.cos(time * 0.5) * 5;
+                
+                drawMonaliza();
+                animationFrame = requestAnimationFrame(animateEyes);
+            }
+            
+            animateEyes();
+            
+            canvas.addEventListener('mouseenter', () => {
+                cancelAnimationFrame(animationFrame);
+            });
+            
+            canvas.addEventListener('mouseleave', () => {
+                animateEyes();
+            });
+        }
+        
+        function initFastBackgroundAnimation() {
+            const container = document.getElementById('fast-bg-animation');
+            if (!container) return;
+            
+            setInterval(createRandomShape, 100);
+            
+            function createRandomShape() {
+
+                const shape = document.createElement('div');
+                shape.classList.add('animated-shape');
+                
+                if (Math.random() > 0.5) {
+                    shape.classList.add('shape-square');
+                } else {
+                    shape.classList.add('shape-circle');
+                }
+                
+                const posX = Math.random() * 100;
+                const posY = Math.random() * 100;
+                shape.style.left = `${posX}%`;
+                shape.style.top = `${posY}%`;
+
+                const sizeMultiplier = Math.random() * 1 + 0.5;
+                shape.style.transform = `scale(${sizeMultiplier})`;
+                
+                const duration = Math.random() * 1.5 + 1.5;
+                shape.style.animationDuration = `${duration}s`;
+                
+                container.appendChild(shape);
+                
+                setTimeout(() => {
+                    if (shape.parentNode === container) {
+                        container.removeChild(shape);
+                    }
+                }, duration * 1000);
+            }
+        }
+        
+        function initScrollDownArrow() {
+            const arrow = document.getElementById('scroll-down-arrow');
+            if (!arrow) return;
+            
+            function updateArrowVisibility() {
+                const scrollPosition = window.scrollY;
+                const windowHeight = window.innerHeight;
+                
+                if (scrollPosition > 100 && scrollPosition < document.body.scrollHeight - windowHeight - 200) {
+                    arrow.classList.add('visible');
+                } else {
+                    arrow.classList.remove('visible');
+                }
+            }
+            
+            arrow.addEventListener('click', () => {
+                const scrollPosition = window.scrollY;
+                const windowHeight = window.innerHeight;
+                
+                const sections = document.querySelectorAll('section');
+                let nextSectionTop = document.body.scrollHeight;
+                
+                for (let i = 0; i < sections.length; i++) {
+                    const sectionTop = sections[i].offsetTop - 80;
+                    if (sectionTop > scrollPosition + 100) {
+                        nextSectionTop = sectionTop;
+                        break;
+                    }
+                }
+                
+                window.scrollTo({
+                    top: nextSectionTop,
+                    behavior: 'smooth'
+                });
+            });
+            
+            window.addEventListener('scroll', updateArrowVisibility);
+            
+            updateArrowVisibility();
+        }
+        
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                window.scrollTo({
+                    top: targetElement.offsetTop - 80,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
